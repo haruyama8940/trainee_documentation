@@ -44,10 +44,7 @@ theme:
 
 extra:
     logo:
-        # 利用可能なアイコンは以下を参照
-        # https://material.io/resources/icons/?icon=description&style=baseline
         icon: 'developer_board'
-    # ウェブアプリマニフェストを有効化
     manifest: 'manifest.webmanifest'
     social:
       - icon: fontawesome/brands/github
@@ -76,7 +73,7 @@ nav:
   - このサイトについて: index.md
 - Document:
   - Simulator:
-    - Raspberry Pi Cat Simulator: document/simulator/trainee_simulator.md
+    - トレーニー シミュレータ: document/simulator/trainee_simulator.md
 
 - Repository: 
   - トレーニー関連のリポジトリの説明: repository/repository_description.md
