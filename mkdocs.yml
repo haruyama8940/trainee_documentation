@@ -1,0 +1,85 @@
+site_name: トレーニー マニュアル
+site_url: https://Shinsotsu-Tsukuba-Challenger.github.io/trainee_documentation/
+site_author: Tatsuhiro Ikebe
+
+repo_name: Shinsotsu-Tsukuba-Challenger/trainee_documentation
+repo_url: https://github.com/Shinsotsu-Tsukuba-Challenger/trainee_documentation
+repo: fontawesome/brands/github
+
+copyright: Copyright &copy; 2024 Tatsuhiro Ikebe
+
+theme:
+    name: material
+    language: ja
+    logo: './images/trainee_logo.png'
+    favicon: './images/favicon.ico'
+    font:
+        text: 'Roboto'
+        code: 'Roboto Mono'
+    features:
+        - navigation.tabs
+        - navigation.top
+        - navigation.expand
+        - toc.integrate
+        - content.code.annotate
+        - content.code.copy
+        - content.code.select
+        - content.code.annotate
+    palette:
+        - scheme: default
+          primary: blue
+          accent: white
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: ダークモードに切り替えます。
+
+        - scheme: slate
+          primary: black
+          accent: black
+          toggle:
+              icon: material/toggle-switch
+              name: ライトモードに切り替えます。
+    icon:
+      repo: fontawesome/brands/github
+
+extra:
+    logo:
+        # 利用可能なアイコンは以下を参照
+        # https://material.io/resources/icons/?icon=description&style=baseline
+        icon: 'developer_board'
+    # ウェブアプリマニフェストを有効化
+    manifest: 'manifest.webmanifest'
+    social:
+      - icon: fontawesome/brands/github
+        link: https://github.com/Shinsotsu-Tsukuba-Challenger
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - footnotes
+    - pymdownx.tabbed:
+        alternate_style: true
+    - pymdownx.superfences
+    - footnotes
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.details
+
+nav:
+
+- Home:
+  - このサイトについて: index.md
+- Document:
+  - Simulator:
+    - Raspberry Pi Cat Simulator: document/simulator/trainee_simulator.md
+
+- Repository: 
+  - トレーニー関連のリポジトリの説明: repository/repository_description.md
+- Study Meeting:
+  - ソフトウェア:
+    - 開発の流れ: study_meeting/software_development.md

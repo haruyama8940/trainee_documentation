@@ -1,0 +1,22 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths-ignore:
+      - '**/LICENSE'
+      - '**/*.md'
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/uhobeike/mkdocs-serve:latest
+      options: --user 1001
+      credentials:
+        username: ${{ github.actor }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: deploy
+        run: mkdocs gh-deploy --force
