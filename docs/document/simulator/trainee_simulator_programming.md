@@ -103,3 +103,11 @@ source install/setup.bash
 ros2 launch raspicat_map2gazebo raspicat_tsukuba2023_world.launch 
 ros2 run imu_subscriber imu_subscriber
 ```
+* 結果
+``` sh
+runner@ikebe:~/trainee (main)(22:41:45)$ ros2 run imu_subscriber imu_subscriber 
+[INFO] [1724852509.058024108] [imu_subscriber]: Received IMU data:
+[INFO] [1724852509.058267237] [imu_subscriber]: Orientation -> x: 1.00, y: 0.00, z: -0.00, w: 0.00
+[INFO] [1724852509.058324576] [imu_subscriber]: Angular Velocity -> x: 0.00, y: -0.00, z: 0.00
+[INFO] [1724852509.058353759] [imu_subscriber]: Linear Acceleration -> x: 0.02, y: -0.02, z: -9.77
+```
