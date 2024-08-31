@@ -54,3 +54,17 @@ ros2 launch raspicat_map2gazebo raspicat_tsukuba2023_world.launch
 
 <center><a href="../../../images/trainee_sim.png"><img src="../../../images/trainee_sim.png" width="800"/></a>
 </center>
+
+### トレーニーを動かそう！
+
+teleop_twist_keyboardというwindowが立ち上がるので、そこでiキーを押すと  
+シミュレータ内のロボットが前進します。
+
+```
+ros2 launch raspicat_map2gazebo raspicat_tsukuba2023_world.launch
+ros2 launch raspicat_bringup teleop.launch.py teleop:=key
+ros2 service call /motor_power std_srvs/SetBool '{data: true}'
+```
+
+<center><a href="../../../images/trainee_sim_teleop.png"><img src="../../../images/trainee_sim_teleop.png" width="800"/></a>
+</center>
