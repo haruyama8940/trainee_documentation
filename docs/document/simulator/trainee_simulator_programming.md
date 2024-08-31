@@ -5,6 +5,19 @@
 
 ## IMUのデータを取得しよう
 
+### パッケージの構成について
+
+``` sh
+runner@ikebe:~/trainee/src/imu_subscriber (main)(12:22:48)$ tree
+.
+├── CMakeLists.txt
+├── package.xml
+└── src
+    └── imu_subscriber.cpp
+
+1 directory, 3 files
+```
+
 ### コードを書く
 
 * imu_subscriber.cpp
@@ -103,7 +116,7 @@ source install/setup.bash
 ros2 launch raspicat_map2gazebo raspicat_tsukuba2023_world.launch 
 ros2 run imu_subscriber imu_subscriber
 ```
-* 結果
+* 結果（注: Gazeboが正常に立ち上がるまで出力されません）
 ``` sh
 runner@ikebe:~/trainee (main)(22:41:45)$ ros2 run imu_subscriber imu_subscriber 
 [INFO] [1724852509.058024108] [imu_subscriber]: Received IMU data:
