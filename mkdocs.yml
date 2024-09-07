@@ -75,6 +75,8 @@ nav:
     - 起動方法: document/simulator/trainee_simulator.md
     - 入出力: document/simulator/trainee_simulator_io.md
     - プログラミング例: document/simulator/trainee_simulator_programming.md
+    - SLAM: document/simulator/trainee_slam.md
+    - Navigation: document/simulator/trainee_navigation.md
 
 - Repository: 
   - トレーニー関連のリポジトリの説明: repository/repository_description.md
